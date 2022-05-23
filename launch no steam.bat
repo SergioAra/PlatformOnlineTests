@@ -1,1 +1,1 @@
-"D:\Epic Games\UE_5.0\Engine\Binaries\Win64\UnrealEditor.exe" "D:\My Projects\PuzzlePlatforms\PuzzlePlatforms.uproject" -game -log -nosteam -d3ddebug
+"C:\Program Files\Epic Games\UE_5.0\Engine\Binaries\Win64\UnrealEditor.exe" "D:\Personal\My Projects\PuzzlePlatforms\PlatformOnlineTests\PuzzlePlatforms.uproject" -game -log -nosteam

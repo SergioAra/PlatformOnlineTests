@@ -17,6 +17,7 @@
 class UMenuWidget;
 class UMainMenu;
 class FOnlineSessionSearch;
+class UNetDriver;
 
 UCLASS()
 class PUZZLEPLATFORMS_API UPlatformsGameInstance : public UGameInstance, public IMenuInterface
@@ -55,6 +56,8 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void LobbyLoadMenu();
 
+	void StartSession();
+
 protected:
 
 	void OnCreateSessionComplete(FName SessionName, bool bSuccess);
@@ -66,6 +69,8 @@ protected:
 	void OnFindSessionsComplete(bool bSuccess);
 
 	void OnJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type Result);
+
+	void OnNetworkFailure(UWorld* World, UNetDriver* NetDriver, ENetworkFailure::Type FailureTpe, const FString& ErrorString) ;
 
 	UPROPERTY(EditDefaultsOnly)
 	TSubclassOf<UMainMenu> MainMenuWidgetClass;

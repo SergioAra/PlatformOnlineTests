@@ -22,5 +22,13 @@ public:
 
 protected:
 
+	FTimerHandle GameStartTimerHandle;
+
+	UPROPERTY(EditDefaultsOnly)
+	float GameStartDelay = 5.f;
+
 	uint32 NumberOfPlayers = 0;
+
+	UFUNCTION(Exec)
+	void StartGame();
 };

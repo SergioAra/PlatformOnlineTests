@@ -32,6 +32,11 @@ void UPlatformsGameInstance::Init()
 			SessionInterface->OnJoinSessionCompleteDelegates.AddUObject(this, &UPlatformsGameInstance::OnJoinSessionComplete);
 		}
 	}
+
+	if (GEngine)
+	{
+		GEngine->NetworkFailureEvent.AddUObject(this, &UPlatformsGameInstance::OnNetworkFailure);
+	}
 }
 
 void UPlatformsGameInstance::Host(FString InServerName)
@@ -84,7 +89,7 @@ void UPlatformsGameInstance::CreateSession()
 	{
 		FOnlineSessionSettings SessionSettings;
 		SessionSettings.bIsLANMatch = (IOnlineSubsystem::Get()->GetSubsystemName() == "NULL"? true : false);
-		SessionSettings.NumPublicConnections = 2.f;
+		SessionSettings.NumPublicConnections = 5;
 		SessionSettings.bShouldAdvertise = true;
 		SessionSettings.bUsesPresence = true; //Enable presence for steam lobbies
 		SessionSettings.bUseLobbiesIfAvailable = true;
@@ -155,6 +160,11 @@ void UPlatformsGameInstance::OnJoinSessionComplete(FName SessionName, EOnJoinSes
 	}
 }
 
+void UPlatformsGameInstance::OnNetworkFailure(UWorld* World, UNetDriver* NetDriver, ENetworkFailure::Type FailureTpe, const FString& ErrorString)
+{
+	LoadMainMenuLevel();
+}
+
 void UPlatformsGameInstance::Join(uint32 Index)
 {
 	if (!SessionInterface.IsValid())
@@ -184,6 +194,8 @@ void UPlatformsGameInstance::RefreshServerList()
 		//SessionSearch->bIsLanQuery = true;
 		SessionSearch->MaxSearchResults = 100;
 		SessionSearch->QuerySettings.Set(SEARCH_PRESENCE, true, EOnlineComparisonOp::Equals);
+		SessionSearch->QuerySettings.Set(SEARCH_EMPTY_SERVERS_ONLY, false, EOnlineComparisonOp::Equals);
+	
 		SessionInterface->FindSessions(0, SessionSearch.ToSharedRef());
 	}
 }
@@ -255,4 +267,12 @@ void UPlatformsGameInstance::LobbyLoadMenu()
 
 	LobbyMenuWidget->Setup();
 	LobbyMenuWidget->SetMenuInterface(this);
+}
+
+void UPlatformsGameInstance::StartSession()
+{
+	if (SessionInterface.IsValid())
+	{
+		SessionInterface->StartSession(NAME_GameSession);
+	}
 }

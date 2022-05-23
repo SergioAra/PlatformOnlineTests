@@ -8,13 +8,9 @@ void ALobbyGameMode::PostLogin(APlayerController* NewPlayer)
 {
 	Super::PostLogin(NewPlayer);
 	NumberOfPlayers++;
-	if (NumberOfPlayers >= 2)
+	if (NumberOfPlayers > 1 && !GetWorldTimerManager().IsTimerActive(GameStartTimerHandle))
 	{
-		UPlatformsGameInstance* GameInstance = GetGameInstance<UPlatformsGameInstance>();
-		if (GameInstance)
-		{
-			GameInstance->ServerTravelTo(TEXT("Level1"));
-		}
+		GetWorldTimerManager().SetTimer(GameStartTimerHandle, this, &ALobbyGameMode::StartGame, GameStartDelay);
 	}
 }
 
@@ -22,4 +18,15 @@ void ALobbyGameMode::Logout(AController* Exiting)
 {
 	Super::Logout(Exiting);
 	NumberOfPlayers--;
+}
+
+void ALobbyGameMode::StartGame()
+{
+	UPlatformsGameInstance* GameInstance = GetGameInstance<UPlatformsGameInstance>();
+	if (GameInstance)
+	{
+		GameInstance->StartSession();
+		bUseSeamlessTravel = true;
+		GameInstance->ServerTravelTo(TEXT("Level1"));
+	}
 }
