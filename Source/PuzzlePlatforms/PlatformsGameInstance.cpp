@@ -45,6 +45,14 @@ void UPlatformsGameInstance::Init()
 	Login();
 }
 
+void UPlatformsGameInstance::Shutdown()
+{
+	if (SessionInterface->GetNamedSession(NAME_GameSession))
+	{
+		DestroySession();
+	}
+}
+
 void UPlatformsGameInstance::Host(FString InServerName)
 {
 	ServerName = InServerName;
@@ -98,10 +106,6 @@ void UPlatformsGameInstance::DestroySession()
 void UPlatformsGameInstance::OnDestroySessionComplete(FName SessionName, bool bSuccess)
 {
 	UE_LOG(LogTemp, Warning, TEXT("Session destroyed"))
-	if (bSuccess)
-	{
-		CreateSession();
-	}
 }
 
 void UPlatformsGameInstance::CreateSession()
@@ -240,7 +244,9 @@ void UPlatformsGameInstance::RefreshServerList()
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Searching for sessions"))
 		SessionSearch->bIsLanQuery = USING_LAN;
-		SessionSearch->MaxSearchResults = 100;
+		SessionSearch->MaxSearchResults = 5000;
+		SessionSearch->QuerySettings.Set(SEARCH_KEYWORDS, FString("Lobby"), EOnlineComparisonOp::Equals);
+		SessionSearch->QuerySettings.Set(SEARCH_LOBBIES, true, EOnlineComparisonOp::Equals);
 		//SessionSearch->QuerySettings.Set(SEARCH_PRESENCE, true, EOnlineComparisonOp::Equals);
 		//SessionSearch->QuerySettings.Set(SEARCH_EMPTY_SERVERS_ONLY, false, EOnlineComparisonOp::Equals);
 	

@@ -29,6 +29,7 @@ public:
 	UPlatformsGameInstance(const FObjectInitializer& ObjectInitializer);
 
 	virtual void Init() override;
+	virtual void Shutdown() override;
 
 	UFUNCTION(Exec)
 	virtual void Host(FString InServerName) override;
