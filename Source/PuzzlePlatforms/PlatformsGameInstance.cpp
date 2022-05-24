@@ -12,7 +12,7 @@
 #include "UI/MainMenu.h"
 
 const static FName SERVER_NAME_SETTINGS_KEY = TEXT("ServerName");
-const static bool USING_LAN = false;
+const static bool USING_LAN = true;
 
 UPlatformsGameInstance::UPlatformsGameInstance(const FObjectInitializer& ObjectInitializer)
 {
@@ -131,7 +131,6 @@ void UPlatformsGameInstance::CreateSession()
 		SessionSettings.Set(SEARCH_KEYWORDS, FString("Lobby"), EOnlineDataAdvertisementType::ViaOnlineService);
 		SessionInterface->CreateSession(0, NAME_GameSession, SessionSettings);
 	}
-
 }
 
 void UPlatformsGameInstance::OnFindSessionsComplete(bool bSuccess)
