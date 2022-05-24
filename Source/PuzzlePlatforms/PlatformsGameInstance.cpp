@@ -6,6 +6,7 @@
 #include "Blueprint/UserWidget.h"
 #include "OnlineSessionSettings.h"
 #include "Interfaces/OnlineSessionInterface.h"
+#include "Interfaces/OnlineIdentityInterface.h"
 
 #include "UI/MenuWidget.h"
 #include "UI/MainMenu.h"
@@ -19,7 +20,9 @@ UPlatformsGameInstance::UPlatformsGameInstance(const FObjectInitializer& ObjectI
 
 void UPlatformsGameInstance::Init()
 {
-	IOnlineSubsystem* SubSystem = IOnlineSubsystem::Get();
+	Super::Init();
+
+	SubSystem = IOnlineSubsystem::Get();
 	if (SubSystem)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("subsystem found"))
@@ -37,6 +40,8 @@ void UPlatformsGameInstance::Init()
 	{
 		GEngine->NetworkFailureEvent.AddUObject(this, &UPlatformsGameInstance::OnNetworkFailure);
 	}
+
+	Login();
 }
 
 void UPlatformsGameInstance::Host(FString InServerName)
@@ -85,17 +90,28 @@ void UPlatformsGameInstance::OnDestroySessionComplete(FName SessionName, bool bS
 
 void UPlatformsGameInstance::CreateSession()
 {
+	if (!bIsLoggedIn)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Not logged in, cannot create session"))
+		return;
+	}
+
 	if (SessionInterface.IsValid())
 	{
 		FOnlineSessionSettings SessionSettings;
-		SessionSettings.bIsLANMatch = (IOnlineSubsystem::Get()->GetSubsystemName() == "NULL"? true : false);
+		SessionSettings.bIsLANMatch = false;
+		SessionSettings.bIsDedicated = false;
 		SessionSettings.NumPublicConnections = 5;
 		SessionSettings.bShouldAdvertise = true;
-		SessionSettings.bUsesPresence = true; //Enable presence for steam lobbies
-		SessionSettings.bUseLobbiesIfAvailable = true;
+		SessionSettings.bAllowJoinInProgress = true;
+		SessionSettings.bAllowJoinViaPresence = true;
+		SessionSettings.bUsesPresence = true;
+		//SessionSettings.bUseLobbiesIfAvailable = true;
 		SessionSettings.Set(SERVER_NAME_SETTINGS_KEY, ServerName, EOnlineDataAdvertisementType::ViaOnlineServiceAndPing);
+		SessionSettings.Set(SEARCH_KEYWORDS, FString("Lobby"), EOnlineDataAdvertisementType::ViaOnlineService);
 		SessionInterface->CreateSession(0, NAME_GameSession, SessionSettings);
 	}
+
 }
 
 void UPlatformsGameInstance::OnFindSessionsComplete(bool bSuccess)
@@ -163,6 +179,22 @@ void UPlatformsGameInstance::OnJoinSessionComplete(FName SessionName, EOnJoinSes
 void UPlatformsGameInstance::OnNetworkFailure(UWorld* World, UNetDriver* NetDriver, ENetworkFailure::Type FailureTpe, const FString& ErrorString)
 {
 	LoadMainMenuLevel();
+}
+
+void UPlatformsGameInstance::OnLoginComplete(int32 LocalUserNum, bool bWasSuccessful, const FUniqueNetId& UserId, const FString& Error)
+{
+
+	UE_LOG(LogTemp, Warning, TEXT("Logged in %d"), bWasSuccessful)
+	bIsLoggedIn = bWasSuccessful;
+
+	if (SubSystem)
+	{
+		IOnlineIdentityPtr OnlineIdentity = SubSystem->GetIdentityInterface();
+		if (OnlineIdentity.IsValid())
+		{
+			OnlineIdentity->ClearOnLoginCompleteDelegates(0, this);
+		}
+	}
 }
 
 void UPlatformsGameInstance::Join(uint32 Index)
@@ -274,5 +306,22 @@ void UPlatformsGameInstance::StartSession()
 	if (SessionInterface.IsValid())
 	{
 		SessionInterface->StartSession(NAME_GameSession);
+	}
+}
+
+void UPlatformsGameInstance::Login()
+{
+	if (SubSystem)
+	{
+		IOnlineIdentityPtr OnlineIdentity = SubSystem->GetIdentityInterface();
+		if (OnlineIdentity.IsValid())
+		{
+			FOnlineAccountCredentials Credentials;				//dev											//accountportal
+			Credentials.Id = FString("127.0.0.1:8081");		//for dev use IP and port
+			Credentials.Token = FString("EOSTestCredential");	//token for dev is credential name
+			Credentials.Type = FString("developer");			//developer for dev								// accountportal only uses web for login
+			OnlineIdentity->OnLoginCompleteDelegates->AddUObject(this, &UPlatformsGameInstance::OnLoginComplete);
+			OnlineIdentity->Login(0, Credentials);
+		}
 	}
 }

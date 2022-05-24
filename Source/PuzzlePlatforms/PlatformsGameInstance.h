@@ -58,6 +58,8 @@ public:
 
 	void StartSession();
 
+	void Login();
+
 protected:
 
 	void OnCreateSessionComplete(FName SessionName, bool bSuccess);
@@ -70,7 +72,9 @@ protected:
 
 	void OnJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type Result);
 
-	void OnNetworkFailure(UWorld* World, UNetDriver* NetDriver, ENetworkFailure::Type FailureTpe, const FString& ErrorString) ;
+	void OnNetworkFailure(UWorld* World, UNetDriver* NetDriver, ENetworkFailure::Type FailureTpe, const FString& ErrorString);
+
+	void OnLoginComplete(int32 LocalUserNum, bool bWasSuccessful, const FUniqueNetId& UserId, const FString& Error);
 
 	UPROPERTY(EditDefaultsOnly)
 	TSubclassOf<UMainMenu> MainMenuWidgetClass;
@@ -92,4 +96,8 @@ protected:
 	TSharedPtr<FOnlineSessionSearch> SessionSearch;
 
 	FString ServerName;
+
+	IOnlineSubsystem* SubSystem;
+
+	bool bIsLoggedIn = false;;
 };

@@ -1,0 +1,294 @@
+[2022.05.24-14.11.55:700] [EOS SDK] Initializing ...
+[2022.05.24-14.11.55:742] [EOS SDK] Initialized. Setting Logging Callback ...
+[2022.05.24-14.11.55:742] [EOS SDK] Logging Callback Set
+[2022.05.24-14.11.55:743] [EOS SDK] LogEOS: [Boot] EOSSDK Version 1.14.2-18950192 booting at 2022-05-24T14:11:55.742Z
+[2022.05.24-14.11.55:745] [EOS SDK] LogEOS: [Boot] EOSSDK Platform Properties [OS=Windows/10.0.22000.675.64bit, ClientId=xyza7891u8FeD7uR3Kc5B5oeAWoE4bkO, ProductId=02c0d26893eb442095e9cbd2c47e2e24, SandboxId=443496df21234596bbef53b2a4952dcf, DeploymentId=d5dc5ddf91814094ad8166a08a9ff143, ProductName=EOSTest, ProductVersion=1.0, IsServer=false, Flags=EnableD3D9Overlay+EnableD3D10Overlay+EnableOpenGLOverlay]
+[2022.05.24-14.11.56:040] [EOS SDK] LogEOSOverlay: Overlay library loaded, version ++EOSSDK+Release-Overlay-CL-19356704
+[2022.05.24-14.11.56:041] [EOS SDK] LogEOSOverlay: Beginning dxgi factory detour
+[2022.05.24-14.11.56:041] [EOS SDK] LogEOSOverlay: Factory detour complete
+[2022.05.24-14.11.56:042] [EOS SDK] LogEOSOverlay: Beginning swap chain detour
+[2022.05.24-14.11.56:042] [EOS SDK] LogEOSOverlay: Attempting to create swap chain using D3D11
+[2022.05.24-14.11.56:042] [EOS SDK] LogEOSOverlay: Successfully created swap chain using D3D11 with feature level b000
+[2022.05.24-14.11.56:042] [EOS SDK] LogEOSOverlay: Swapchain detour complete
+[2022.05.24-14.11.56:042] [EOS SDK] LogEOSOverlay: Overlay loaded and initialized
+[2022.05.24-14.11.56:093] [EOS SDK] LogEOSAntiCheat: [AntiCheatClient] Anti-cheat client not available. Verify that the game was started using the anti-cheat bootstrapper if you intend to use it.
+[2022.05.24-14.11.56:094] [EOS SDK] LogEOSRTC: LibRTCCore: Initializing LibRTC...
+[2022.05.24-14.11.56:239] Direct3D Adapter (0): VID:10DE, PID:2488 - NVIDIA GeForce RTX 3070
+
+[2022.05.24-14.11.56:457] AssetDir: D:\Personal\My Projects\PuzzlePlatforms\PlatformOnlineTests\Encrypted\Samples\AuthAndFriends\Bin\Win64\Debug_DX/../../../../Shared/
+[2022.05.24-14.11.56:622] EOS SDK SetCurrentPayload: A1B2C3D4E5
+[2022.05.24-14.11.56:694] [EOS SDK] Overlay Display Settings Updated: Visible(FALSE) ExclusiveInput(FALSE)
+[2022.05.24-14.11.56:694] [EOS SDK] LogEOS: Updating Platform SDK Config, Time: 0.596779
+[2022.05.24-14.11.56:700] [EOS SDK] LogEOSOverlay: Probing swap chain to determine device version
+[2022.05.24-14.11.56:700] [EOS SDK] LogEOSOverlay: Probe complete, determined: D3D11
+[2022.05.24-14.11.56:701] [EOS SDK] LogEOSOverlay: Window subclass attached to 00000000000B06CE
+[2022.05.24-14.11.56:701] [EOS SDK] LogEOSOverlay: Creating overlay widget manager
+[2022.05.24-14.11.56:797] [EOS SDK] LogEOSOverlay: Launching render process
+[2022.05.24-14.11.56:856] [EOS SDK] LogEOSOverlay: Overlay ready. Firing 1 OnReady handlers
+[2022.05.24-14.11.56:887] [EOS SDK] LogEOSOverlay: Tick thread starting...
+[2022.05.24-14.11.57:423] [EOS SDK] LogEOS: SDK Config Platform Update Request Successful, Time: 1.309679
+[2022.05.24-14.11.57:427] [EOS SDK] LogEOSAnalytics: Start Session (User: ...)
+[2022.05.24-14.11.57:427] [EOS SDK] LogEOSAnalytics: Record Event: SDKOverlayComponent.Init <Redacted>
+[2022.05.24-14.11.57:428] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.OverlayLoaded <Redacted>
+[2022.05.24-14.11.57:428] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.FactoryDetour <Redacted>
+[2022.05.24-14.11.57:428] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.SwapchainDetour <Redacted>
+[2022.05.24-14.11.57:429] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.ObserveBrowserStatus <Redacted>
+[2022.05.24-14.11.57:429] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.RegisterKeyListener <Redacted>
+[2022.05.24-14.11.57:429] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.GraphicsDeviceCreated <Redacted>
+[2022.05.24-14.11.57:429] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.OverlayInitialized <Redacted>
+[2022.05.24-14.11.57:430] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.LaunchRenderProcess <Redacted>
+[2022.05.24-14.11.57:430] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.RegisterJSBindings <Redacted>
+[2022.05.24-14.11.57:430] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.SwapChainCreated <Redacted>
+[2022.05.24-14.11.57:430] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.11.57:430] [EOS SDK] LogEOSAnalytics: EOS SDK Analytics disabled for route [1].
+[2022.05.24-14.11.57:432] [EOS SDK] LogEOS: Updating Product SDK Config, Time: 1.325728
+[2022.05.24-14.11.57:432] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.RegisterJSBindings <Redacted>
+[2022.05.24-14.11.57:624] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.11.57:645] [EOS SDK] LogEOSConnect: ConnectClientAuthTask Success
+[2022.05.24-14.11.57:660] [EOS SDK] LogEOSAnalytics: Start Session (User: ...)
+[2022.05.24-14.11.57:823] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.11.57:840] [EOS SDK] LogEOS: SDK Config Product Update Request Successful, Time: 1.726071
+[2022.05.24-14.11.57:842] [EOS SDK] LogEOS: SDK Config Data - Watermark: 1003115750
+[2022.05.24-14.11.57:842] [EOS SDK] LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 1.726071, Update Interval: 300.238037
+[2022.05.24-14.11.57:974] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.12.25:572] [EOS SDK] Logging In with Account Portal
+[2022.05.24-14.12.26:062] [EOS SDK] LogEOS: Error response received from backend. ServiceName=[OAuth], OperationName=[TokenGrant], Url=[<Redacted>], HttpStatus=[400], ErrorCode=[errors.com.epicgames.bad_request], NumericErrorCode=[1012], ErrorMessage=[The Client is not configured correctly. Please make sure it is associated with an Application.], CorrId=[EOS-kX_wNeXwlUWAUrTUHMi0ng-O_WHKnz2oU6FGIKXLt-3Bg-zAoQKHRsKUKFNZSuUTBfZQ]
+[2022.05.24-14.12.26:063] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.12.26:077] [EOS SDK] LogEOSAuth: ClientAuthTask Failure
+[2022.05.24-14.12.26:092] [EOS SDK] LogEOSAuth: xyz...bkO failed: EOS_InvalidRequest
+[2022.05.24-14.12.26:092] [EOS SDK] LogEOSAuth: FInitiateDeviceFlowTask Failure
+[2022.05.24-14.12.26:128] [EOS SDK] LogEOSAuth: login failed: 11
+[2022.05.24-14.12.26:143] [EOS SDK] Login Complete - User ID: NULL
+[2022.05.24-14.12.26:143]  - Login Mode: 4
+[2022.05.24-14.12.26:143] [EOS SDK] Login Failed - Error Code: EOS_InvalidRequest
+[2022.05.24-14.12.57:413] [EOS SDK] LogEOSAnalytics: Record Event: UsageMetric <Redacted>
+[2022.05.24-14.12.57:413] [EOS SDK] LogEOSAnalytics: Record Event: UsageMetric <Redacted>
+[2022.05.24-14.12.57:624] [EOS SDK] LogEOSAnalytics: Record Event: UsageMetric <Redacted>
+[2022.05.24-14.13.26:107] [EOS SDK] LogEOSAnalytics: Record Event: UsageMetric <Redacted>
+[2022.05.24-14.13.56:256] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.14.50:153] [EOS SDK] Logging In with Account Portal
+[2022.05.24-14.14.50:623] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.14.50:640] [EOS SDK] LogEOSAuth: ClientAuthTask Success
+[2022.05.24-14.14.50:640] [EOS SDK] LogEOSAuth: NewClientToken: Client ClientId: xyz...bkO Access[Expires: 2022.05.24-16.14.54 Remaining: 7200.45]  State: Valid
+[2022.05.24-14.14.50:658] [EOS SDK] LogEOSAuth: xyz...bkO result: eyJ...hVQ
+[2022.05.24-14.14.50:839] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.14.50:857] [EOS SDK] LogEOSAuth: FInitiateDeviceFlowTask Success
+[2022.05.24-14.14.50:857] [EOS SDK] LogEOSAuth: Device code flow to be continued at https://www.epicgames.com/activate?userCode=CB6D69GH
+[2022.05.24-14.14.50:875] [EOS SDK] LogEOSAuth: Launching platform browser for account portal
+[2022.05.24-14.14.51:039] [EOS SDK] LogEOS: Error response received from backend. ServiceName=[OAuth], OperationName=[TokenGrant], Url=[<Redacted>], HttpStatus=[400], ErrorCode=[errors.com.epicgames.account.oauth.authorization_pending], NumericErrorCode=[1012], ErrorMessage=[The authorization server request is still pending as the end user has yet to visit and enter the verification code.], CorrId=[EOS-kX_wNeXwlUWAUrTUHMi0ng-O_WHKnz2oU6FGIKXLt-3Bg-6eo7JRNxvkK1DHT8VjIFqw]
+[2022.05.24-14.14.51:039] [EOS SDK] LogEOSAuth: Polling for token grant. Device code flow to be continued at https://www.epicgames.com/activate?userCode=CB6D69GH
+[2022.05.24-14.14.51:039] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.15.01:039] [EOS SDK] LogEOSAuth: Next token grant poll
+[2022.05.24-14.15.01:173] [EOS SDK] LogEOS: Error response received from backend. ServiceName=[OAuth], OperationName=[TokenGrant], Url=[<Redacted>], HttpStatus=[400], ErrorCode=[errors.com.epicgames.account.oauth.authorization_pending], NumericErrorCode=[1012], ErrorMessage=[The authorization server request is still pending as the end user has yet to visit and enter the verification code.], CorrId=[EOS-kX_wNeXwlUWAUrTUHMi0ng-O_WHKnz2oU6FGIKXLt-3Bg-5LMAP7JRKkquFIqdBpOtHA]
+[2022.05.24-14.15.01:173] [EOS SDK] LogEOSAuth: Polling for token grant. Device code flow to be continued at https://www.epicgames.com/activate?userCode=CB6D69GH
+[2022.05.24-14.15.01:174] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.15.11:190] [EOS SDK] LogEOSAuth: Next token grant poll
+[2022.05.24-14.15.11:306] [EOS SDK] LogEOS: Error response received from backend. ServiceName=[OAuth], OperationName=[TokenGrant], Url=[<Redacted>], HttpStatus=[400], ErrorCode=[errors.com.epicgames.account.oauth.authorization_pending], NumericErrorCode=[1012], ErrorMessage=[The authorization server request is still pending as the end user has yet to visit and enter the verification code.], CorrId=[EOS-kX_wNeXwlUWAUrTUHMi0ng-O_WHKnz2oU6FGIKXLt-3Bg-9g4g0uNny0e9yYKKYPH84w]
+[2022.05.24-14.15.11:307] [EOS SDK] LogEOSAuth: Polling for token grant. Device code flow to be continued at https://www.epicgames.com/activate?userCode=CB6D69GH
+[2022.05.24-14.15.11:307] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.15.21:305] [EOS SDK] LogEOSAuth: Next token grant poll
+[2022.05.24-14.15.21:539] [EOS SDK] LogEOSAuth: FPollTokenGrantRequestTask Success
+[2022.05.24-14.15.21:540] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.15.21:558] [EOS SDK] LogEOSAuth: FInitiateDeviceFlowTask Complete Success
+[2022.05.24-14.15.21:559] [EOS SDK] LogEOSAuth: NewUserToken: User ClientId: xyz...bkO AccountId: e35...753 Access[Expires: 2022.05.24-16.15.25 Remaining: 7200.66] Refresh[Expires: 2022-11-20T14:15:25.663Z Remaining: 15552000.66] State: Valid
+[2022.05.24-14.15.21:574] [EOS SDK] LogEOSAuth: GenerateUserAuth success
+[2022.05.24-14.15.21:580] [EOS SDK] LogEOSAuth: Persistent auth credentials successfully updated in the local keychain.
+[2022.05.24-14.15.21:755] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.15.21:772] [EOS SDK] LogEOSAuth: login/queryuserinfo success
+[2022.05.24-14.15.21:773] [EOS SDK] LogEOSUI: Social Overlay: 'leaderboards' feature disabled by overlay.
+[2022.05.24-14.15.21:774] [EOS SDK] Auth Login Status Changed - UserId: e35866bd72494c35bf9745f4f5b4b753, Prev: 0, New: 2
+[2022.05.24-14.15.21:774] [EOS SDK] LogEOSAuth: Login Tasks Complete: 0
+[2022.05.24-14.15.21:775] [EOS SDK] Login Complete - User ID: e35866bd72494c35bf9745f4f5b4b753
+[2022.05.24-14.15.21:775]  - Login Mode: 4
+[2022.05.24-14.15.21:776] [EOS SDK] [0] - Account ID: e35866bd72494c35bf9745f4f5b4b753, Status: 2
+[2022.05.24-14.15.21:776] Player added - Id: e35866bd72494c35bf9745f4f5b4b753
+[2022.05.24-14.15.21:777] [EOS SDK] Querying Friends
+[2022.05.24-14.15.21:777] [EOS SDK] AuthToken
+[2022.05.24-14.15.21:778]  - App: 
+[2022.05.24-14.15.21:778]  - ClientId: xyza7891u8FeD7uR3Kc5B5oeAWoE4bkO
+[2022.05.24-14.15.21:778]  - AccountId: e35866bd72494c35bf9745f4f5b4b753
+[2022.05.24-14.15.21:781]  - AccessToken: eyJ0IjoiZXBpY19pZCIsImFsZyI6IlJTMjU2Iiwia2lkIjoiV01TN0Vua0lHcGNIOURHWnN2MldjWTl4c3VGblpDdHhaamo0QWhiLV84RSJ9.eyJzdWIiOiJlMzU4NjZiZDcyNDk0YzM1YmY5NzQ1ZjRmNWI0Yjc1MyIsInBmc2lkIjoiNDQzNDk2ZGYyMTIzNDU5NmJiZWY1M2IyYTQ5NTJkY2YiLCJpc3MiOiJodHRwczpcL1wvYXBpLmVwaWNnYW1lcy5kZXZcL2VwaWNcL29hdXRoXC92MSIsImRuIjoiQ2x1YnNlcmdpbyIsIm5vbmNlIjoibi1VdUZabU5qdU9WU0s2d2pzZE9icEtneU80eFk9IiwicGZwaWQiOiIwMmMwZDI2ODkzZWI0NDIwOTVlOWNiZDJjNDdlMmUyNCIsInNlYyI6MSwiYXVkIjoieHl6YTc4OTF1OEZlRDd1UjNLYzVCNW9lQVdvRTRia08iLCJwZmRpZCI6ImQ1ZGM1ZGRmOTE4MTQwOTRhZDgxNjZhMDhhOWZmMTQzIiwidCI6ImVwaWNfaWQiLCJzY29wZSI6ImJhc2ljX3Byb2ZpbGUgZnJpZW5kc19saXN0IG9wZW5pZCBvZmZsaW5lX2FjY2VzcyBwcmVzZW5jZSIsImFwcGlkIjoiZmdoaTQ1NjdJQlh4QWRhYlFJWWZyUFg2enZhY2xOOXIiLCJleHAiOjE2NTM0MDg5MjUsImlhdCI6MTY1MzQwMTcyNSwianRpIjoiYmRlNTQ5ZDM1NTY5NGZmMzg1NThmY2U3NTUxNzBmYWEifQ.DjR1cRJcZr6pX0nw9t1Eua54zDpkYpNVt4bN7i_HxhXO-7ap34nB6ERILjxlUtNAbbP-856XPrIxvkOICbZnxC3u-ZsmAOsJttspFxNzUbtoIgP8UyXVDh9ANeVPVlfdKWNpU7gZ_OGWjODlUkSzC8EgYNK7BC4pMXnX-Qae8wBFInKZUV_rZsy1QikjF4R2nwLHDRK4zwH0ifayxZ5QLFia-RMk5msIPYzPMYIaJ1TdUppu9kFSt3-tRZ5CVu3drGL6yd8hYAKu3QH4sxqabwyPdosKUH4HJFHUYP1_ZyzrSCUlky9YFEjLSAawb-5-9tg1md9kc3i_NfceNMqs9Q
+[2022.05.24-14.15.21:782]  - ExpiresIn: 7200.44
+[2022.05.24-14.15.21:783]  - ExpiresAt: 2022-05-24T16:15:25.659Z
+[2022.05.24-14.15.21:783] [EOS SDK] Connect Login - User ID: e35866bd72494c35bf9745f4f5b4b753
+[2022.05.24-14.15.21:941] [EOS SDK] LogEOSUI: Social Overlay: Loading: <Redacted>
+[2022.05.24-14.15.21:942] [EOS SDK] LogEOSUI: Social Overlay: Initital DisplaySettings{ Visible(FALSE) ExclusiveInput(FALSE) HitBox(unset) }
+[2022.05.24-14.15.21:942] [EOS SDK] LogEOSOverlay: Overlay loading <Redacted> in instance 2413991741456
+[2022.05.24-14.15.21:945] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.LoadURL <Redacted>
+[2022.05.24-14.15.21:981] [EOS SDK] LogEOSOverlay: LoadURL result received. [Success=1, BrowserID=1]
+[2022.05.24-14.15.21:981] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.RenderProcess.LoadURL <Redacted>
+[2022.05.24-14.15.21:981] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.LoadURLResult <Redacted>
+[2022.05.24-14.15.21:982] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.RenderProcess.BrowserCreated <Redacted>
+[2022.05.24-14.15.21:982] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.RenderProcess.ConnectBrowserAndRenderProcesses <Redacted>
+[2022.05.24-14.15.22:005] [EOS SDK] LogEOSOverlay: Browser status 0 received for browser 1
+[2022.05.24-14.15.22:005] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.BrowserStatus <Redacted>
+[2022.05.24-14.15.22:087] [EOS SDK] LogEOS: Error response received from backend. ServiceName=[EOSAuth], OperationName=[TokenGrant], Url=[<Redacted>], HttpStatus=[404], ErrorCode=[errors.com.epicgames.eos.auth.user_not_found], NumericErrorCode=[110016], ErrorMessage=[EOS User Identity not found. identityProviderId: epicgames accountId: e35866bd72494c35bf9745f4f5b4b753], CorrId=[EOS-kX_wNeXwlUWAUrTUHMi0ng-O_WHKnz2oU6FGIKXLt-3Bg-1MEyUw6XLUqGTGKALtZ8QA]
+[2022.05.24-14.15.22:088] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.15.22:268] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.15.22:268] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.15.22:268] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.15.22:282] [EOS SDK] Query Friends Complete - User ID: e35866bd72494c35bf9745f4f5b4b753
+[2022.05.24-14.15.22:282] [EOS SDK] NumFriends: 0
+[2022.05.24-14.15.22:282] [EOS SDK] Query User Info Complete - User ID: e35866bd72494c35bf9745f4f5b4b753
+[2022.05.24-14.15.22:283] [EOS SDK] LogEOSMessaging: Attempting connection to Stomp. LocalUserId=[000...cf3] Url=[<Redacted>]
+[2022.05.24-14.15.22:299] [EOS SDK] Connect Create User Complete - ProductUserId: 000202c8d650444c9bf4978b54c3ecf3, Result: EOS_Success
+[2022.05.24-14.15.22:300] [EOS SDK] Product User Id: 000202c8d650444c9bf4978b54c3ecf3, Status: 2
+[2022.05.24-14.15.22:300] [EOS SDK] Metrics - Begin Player Session
+[2022.05.24-14.15.22:454] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.15.22:655] [EOS SDK] LogEOSPresence: Updating Presence to Online. LocalUserId=[e35...753] RichText=[Using EOSTest]
+[2022.05.24-14.15.22:801] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.15.22:817] [EOS SDK] Set presence success
+[2022.05.24-14.15.22:843] [EOS SDK] LogEOSMessaging: Succesfully connected to Stomp. LocalUserId=[000...cf3]
+[2022.05.24-14.15.22:958] [EOS SDK] LogEOSUI: Social Overlay: Achievements refreshing player data for (e35...753) [state: 0, force: player? false, definitions? false].
+[2022.05.24-14.15.22:989] [EOS SDK] LogEOSMessaging: Stomp subscribed to topic /d5dc5ddf91814094ad8166a08a9ff143/account/000202c8d650444c9bf4978b54c3ecf3
+[2022.05.24-14.15.23:089] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.15.23:106] [EOS SDK] LogEOSUI: Social Overlay: Achievements data incomplete, starting next refresh for (e35...753).
+[2022.05.24-14.15.23:107] [EOS SDK] LogEOSUI: Social Overlay: Achievements refreshing definition data for (e35...753) [state: 2, force: player? false, definitions? false].
+[2022.05.24-14.15.23:275] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.15.23:291] [EOS SDK] LogEOSUI: Social Overlay: Achievements populated for (e35...753).
+[2022.05.24-14.15.23:622] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.RenderProcess.JavascriptContextCreated <Redacted>
+[2022.05.24-14.15.24:088] [EOS SDK] LogEOSOverlay: Browser status 1 received for browser 1
+[2022.05.24-14.15.24:088] [EOS SDK] LogEOSUI: Social Overlay: Initial setup of friends overlay: EOS_Success
+[2022.05.24-14.15.24:088] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.RenderProcess.FrameLoadEnd <Redacted>
+[2022.05.24-14.15.24:089] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.BrowserStatus <Redacted>
+[2022.05.24-14.15.25:646] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.ExecuteJavascriptFunction <Redacted>
+[2022.05.24-14.15.25:647] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.InvokeJavascriptCallback <Redacted>
+[2022.05.24-14.15.25:687] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.ExecuteJavascriptFunction <Redacted>
+[2022.05.24-14.15.25:688] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.ExecuteJavascriptFunction <Redacted>
+[2022.05.24-14.15.25:688] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.ExecuteJavascriptFunction <Redacted>
+[2022.05.24-14.15.25:688] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.InvokeJavascriptCallback <Redacted>
+[2022.05.24-14.15.25:688] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.InvokeJavascriptCallback <Redacted>
+[2022.05.24-14.15.25:688] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.InvokeJavascriptCallback <Redacted>
+[2022.05.24-14.15.25:737] [EOS SDK] LogEOSUI: Social Overlay: HandleDisplayUpdateIntent
+[2022.05.24-14.15.25:738] [EOS SDK] LogEOSUI: Social Overlay: DisplayUpdateIntent{ Visible(FALSE) ExclusiveInput(FALSE) HitBox([(0,0)-(0,0)]) }
+[2022.05.24-14.15.25:738] [EOS SDK] LogEOSUI: Social Overlay: New DisplaySettings{ Visible(FALSE) ExclusiveInput(FALSE) HitBox([(0,0)-(0,0)]) }
+[2022.05.24-14.15.25:738] [EOS SDK] LogEOSAnalytics: Record Event: eos.social.overlayopentime <Redacted>
+[2022.05.24-14.15.25:739] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.ExecuteJavascriptFunction <Redacted>
+[2022.05.24-14.15.25:739] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.ExecuteJavascriptFunction <Redacted>
+[2022.05.24-14.15.25:739] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.ExecuteJavascriptFunction <Redacted>
+[2022.05.24-14.15.25:739] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.InvokeJavascriptCallback <Redacted>
+[2022.05.24-14.15.25:740] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.SetDisplaySettings <Redacted>
+[2022.05.24-14.15.25:740] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.InvokeJavascriptCallback <Redacted>
+[2022.05.24-14.15.25:740] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.InvokeJavascriptCallback <Redacted>
+[2022.05.24-14.15.25:789] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.ExecuteJavascriptFunction <Redacted>
+[2022.05.24-14.15.25:789] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.InvokeJavascriptCallback <Redacted>
+[2022.05.24-14.15.25:817] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.EvaluateJS <Redacted>
+[2022.05.24-14.15.25:818] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.EvaluateJavascriptResult <Redacted>
+[2022.05.24-14.15.25:832] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.EvaluateJS <Redacted>
+[2022.05.24-14.15.25:938] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.EvaluateJavascriptResult <Redacted>
+[2022.05.24-14.15.25:938] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.ExecuteJavascriptFunction <Redacted>
+[2022.05.24-14.15.25:938] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.ExecuteJavascriptFunction <Redacted>
+[2022.05.24-14.15.25:938] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.ExecuteJavascriptFunction <Redacted>
+[2022.05.24-14.15.25:939] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.ExecuteJavascriptFunction <Redacted>
+[2022.05.24-14.15.25:939] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.InvokeJavascriptCallback <Redacted>
+[2022.05.24-14.15.25:939] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.InvokeJavascriptCallback <Redacted>
+[2022.05.24-14.15.25:940] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.InvokeJavascriptCallback <Redacted>
+[2022.05.24-14.15.25:940] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.InvokeJavascriptCallback <Redacted>
+[2022.05.24-14.15.26:006] [EOS SDK] LogEOSUI: Social Overlay: HandleDisplayUpdateIntent
+[2022.05.24-14.15.26:007] [EOS SDK] LogEOSUI: Social Overlay: DisplayUpdateIntent{ Visible(TRUE) ExclusiveInput(FALSE) HitBox([(0,0)-(0,0)]) }
+[2022.05.24-14.15.26:008] [EOS SDK] LogEOSUI: Social Overlay: Achievements refreshing player data for (e35...753) [state: 1, force: player? false, definitions? false].
+[2022.05.24-14.15.26:009] [EOS SDK] LogEOSOverlay: Automatically giving keyboard focus to webview that just became visible [InstanceId=2413991741456, BrowserId=1]
+[2022.05.24-14.15.26:009] [EOS SDK] LogEOSUI: Social Overlay: New DisplaySettings{ Visible(TRUE) ExclusiveInput(FALSE) HitBox([(0,0)-(0,0)]) }
+[2022.05.24-14.15.26:010] [EOS SDK] LogEOSAnalytics: Record Event: eos.social.appstartup <Redacted>
+[2022.05.24-14.15.26:011] [EOS SDK] LogEOSAnalytics: Record Event: eos.social.heartbeat <Redacted>
+[2022.05.24-14.15.26:012] [EOS SDK] LogEOSAnalytics: Record Event: eos.social.settingschanged <Redacted>
+[2022.05.24-14.15.26:013] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.ExecuteJavascriptFunction <Redacted>
+[2022.05.24-14.15.26:014] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.ExecuteJavascriptFunction <Redacted>
+[2022.05.24-14.15.26:014] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.ExecuteJavascriptFunction <Redacted>
+[2022.05.24-14.15.26:014] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.ExecuteJavascriptFunction <Redacted>
+[2022.05.24-14.15.26:015] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.SetDisplaySettings <Redacted>
+[2022.05.24-14.15.26:016] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.InvokeJavascriptCallback <Redacted>
+[2022.05.24-14.15.26:016] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.InvokeJavascriptCallback <Redacted>
+[2022.05.24-14.15.26:017] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.InvokeJavascriptCallback <Redacted>
+[2022.05.24-14.15.26:017] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.InvokeJavascriptCallback <Redacted>
+[2022.05.24-14.15.26:076] [EOS SDK] Overlay Display Settings Updated: Visible(TRUE) ExclusiveInput(FALSE)
+[2022.05.24-14.15.26:077] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.EvaluateJS <Redacted>
+[2022.05.24-14.15.26:077] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.EvaluateJavascriptResult <Redacted>
+[2022.05.24-14.15.26:077] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.ExecuteJavascriptFunction <Redacted>
+[2022.05.24-14.15.26:078] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.InvokeJavascriptCallback <Redacted>
+[2022.05.24-14.15.26:097] [EOS SDK] LogEOSAnalytics: Record Event: eos.social.settingschanged <Redacted>
+[2022.05.24-14.15.26:097] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.EvaluateJS <Redacted>
+[2022.05.24-14.15.26:098] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.EvaluateJavascriptResult <Redacted>
+[2022.05.24-14.15.26:098] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.ExecuteJavascriptFunction <Redacted>
+[2022.05.24-14.15.26:098] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.InvokeJavascriptCallback <Redacted>
+[2022.05.24-14.15.26:119] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.EvaluateJS <Redacted>
+[2022.05.24-14.15.26:120] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.EvaluateJavascriptResult <Redacted>
+[2022.05.24-14.15.26:143] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.EvaluateJS <Redacted>
+[2022.05.24-14.15.26:144] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.EvaluateJavascriptResult <Redacted>
+[2022.05.24-14.15.26:208] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.15.26:208] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.15.26:224] [EOS SDK] LogEOSOverlay: Received new texture handle. [Type=0, InstanceId=2413991741456, BrowserId=1, TabId=0, Previous=0000000000000000, New=00000000C0002282]
+[2022.05.24-14.15.26:225] [EOS SDK] LogEOSUI: Social Overlay: Achievements data incomplete, starting next refresh for (e35...753).
+[2022.05.24-14.15.26:225] [EOS SDK] LogEOSUI: Social Overlay: Achievements refreshing definition data for (e35...753) [state: 2, force: player? false, definitions? false].
+[2022.05.24-14.15.26:225] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.InitialTextureReceived <Redacted>
+[2022.05.24-14.15.26:357] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.ExecuteJavascriptFunction <Redacted>
+[2022.05.24-14.15.26:357] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.InvokeJavascriptCallback <Redacted>
+[2022.05.24-14.15.26:358] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.15.26:377] [EOS SDK] LogEOSUI: Social Overlay: Achievements populated for (e35...753).
+[2022.05.24-14.15.26:510] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.ExecuteJavascriptFunction <Redacted>
+[2022.05.24-14.15.26:511] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.InvokeJavascriptCallback <Redacted>
+[2022.05.24-14.15.26:561] [EOS SDK] LogEOSAnalytics: Record Event: eos.social.settingschanged <Redacted>
+[2022.05.24-14.15.26:562] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.ExecuteJavascriptFunction <Redacted>
+[2022.05.24-14.15.26:562] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.InvokeJavascriptCallback <Redacted>
+[2022.05.24-14.15.26:582] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.EvaluateJS <Redacted>
+[2022.05.24-14.15.26:599] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.EvaluateJavascriptResult <Redacted>
+[2022.05.24-14.15.26:600] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.EvaluateJS <Redacted>
+[2022.05.24-14.15.26:618] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.EvaluateJavascriptResult <Redacted>
+[2022.05.24-14.15.31:157] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.ExecuteJavascriptFunction <Redacted>
+[2022.05.24-14.15.31:157] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.InvokeJavascriptCallback <Redacted>
+[2022.05.24-14.15.31:208] [EOS SDK] LogEOSUI: Social Overlay: HandleDisplayUpdateIntent
+[2022.05.24-14.15.31:209] [EOS SDK] LogEOSUI: Social Overlay: DisplayUpdateIntent{ Visible(FALSE) ExclusiveInput(FALSE) HitBox([(0,0)-(0,0)]) }
+[2022.05.24-14.15.31:210] [EOS SDK] LogEOSUI: Social Overlay: New DisplaySettings{ Visible(FALSE) ExclusiveInput(FALSE) HitBox([(0,0)-(0,0)]) }
+[2022.05.24-14.15.31:211] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.ExecuteJavascriptFunction <Redacted>
+[2022.05.24-14.15.31:211] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.SetDisplaySettings <Redacted>
+[2022.05.24-14.15.31:212] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.InvokeJavascriptCallback <Redacted>
+[2022.05.24-14.15.31:233] [EOS SDK] Overlay Display Settings Updated: Visible(FALSE) ExclusiveInput(FALSE)
+[2022.05.24-14.15.31:233] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.EvaluateJS <Redacted>
+[2022.05.24-14.15.31:250] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.EvaluateJS <Redacted>
+[2022.05.24-14.15.31:251] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.EvaluateJavascriptResult <Redacted>
+[2022.05.24-14.15.31:289] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.EvaluateJavascriptResult <Redacted>
+[2022.05.24-14.15.50:871] [EOS SDK] LogEOSAnalytics: Record Event: UsageMetric <Redacted>
+[2022.05.24-14.15.56:239] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.16.21:554] [EOS SDK] LogEOSAuth: Sending Verify Auth request. url=<Redacted>
+[2022.05.24-14.16.21:689] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.16.21:721] [EOS SDK] LogEOSAuth: Verify Auth Success
+[2022.05.24-14.16.21:755] [EOS SDK] LogEOSAnalytics: Record Event: UsageMetric <Redacted>
+[2022.05.24-14.16.21:755] [EOS SDK] LogEOSAnalytics: Record Event: UsageMetric <Redacted>
+[2022.05.24-14.16.22:088] [EOS SDK] LogEOSAnalytics: Record Event: UsageMetric <Redacted>
+[2022.05.24-14.16.22:088] [EOS SDK] LogEOSAnalytics: Record Event: UsageMetric <Redacted>
+[2022.05.24-14.16.22:278] [EOS SDK] LogEOSAnalytics: Record Event: UsageMetric <Redacted>
+[2022.05.24-14.16.22:278] [EOS SDK] LogEOSAnalytics: Record Event: UsageMetric <Redacted>
+[2022.05.24-14.16.22:291] [EOS SDK] LogEOSAnalytics: Record Event: UsageMetric <Redacted>
+[2022.05.24-14.16.22:655] [EOS SDK] LogEOSAnalytics: Record Event: UsageMetric <Redacted>
+[2022.05.24-14.16.22:805] [EOS SDK] LogEOSAnalytics: Record Event: UsageMetric <Redacted>
+[2022.05.24-14.16.22:805] [EOS SDK] LogEOSAnalytics: Record Event: UsageMetric <Redacted>
+[2022.05.24-14.16.58:108] [EOS SDK] LogEOS: Updating Product SDK Config, Time: 302.010651
+[2022.05.24-14.16.58:250] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.16.58:271] [EOS SDK] LogEOS: SDK Config Product Update Request Completed - No Change
+[2022.05.24-14.16.58:271] [EOS SDK] LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 302.151794, Update Interval: 359.816895
+[2022.05.24-14.17.08:839] [EOS SDK] Logging Out
+[2022.05.24-14.17.08:839] [EOS SDK] LogEOSPresence: Setting presence to offline. LocalUserId=[e35...753]
+[2022.05.24-14.17.08:975] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.17.08:994] [EOS SDK] LogEOSPresence: Setting presence to offline complete, LocalUserId=[e35...753], Result=EOS_Success
+[2022.05.24-14.17.08:994] [EOS SDK] LogEOSAuth: Sending Kill Auth request. url=<Redacted>
+[2022.05.24-14.17.09:017] [EOS SDK] Auth Login Status Changed - UserId: e35866bd72494c35bf9745f4f5b4b753, Prev: 2, New: 0
+[2022.05.24-14.17.09:018] [EOS SDK] Metrics - End Player Session
+[2022.05.24-14.17.09:018] Player removed - Id: e35866bd72494c35bf9745f4f5b4b753
+[2022.05.24-14.17.09:018] [EOS SDK] LogEOSFriends: Successfully closed a listener.
+[2022.05.24-14.17.09:022] [EOS SDK] Logout Complete - User: e35866bd72494c35bf9745f4f5b4b753
+[2022.05.24-14.17.09:042] [EOS SDK] LogEOSOverlay: Closing browser [InstanceId=2413991741456, BrowserId=1, TabId=0]
+[2022.05.24-14.17.09:042] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.CloseBrowser <Redacted>
+[2022.05.24-14.17.09:121] [EOS SDK] LogEOSAnalytics: Record Event: EOSSDK.HTTP.Complete <Redacted>
+[2022.05.24-14.17.09:304] [EOS SDK] LogEOSOverlay: Closing active browser [InstanceId=2413991741456, BrowserId=1, TabId=0]
+[2022.05.24-14.17.09:304] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.RenderProcess.BrowserClosed <Redacted>
+[2022.05.24-14.17.09:338] [EOS SDK] LogEOSOverlay: Browser status 3 received for browser 1
+[2022.05.24-14.17.09:338] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.CloseBrowser <Redacted>
+[2022.05.24-14.17.09:338] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.MessageHandler.BrowserStatus <Redacted>
+[2022.05.24-14.17.11:816] [EOS SDK] Shutting Down ...
+[2022.05.24-14.17.11:817] [EOS SDK] LogEOSRTC: LibRTCCore: Shutting down LibRTC...
+[2022.05.24-14.17.11:819] [EOS SDK] LogEOSAuth: Sending Kill Auth request. url=<Redacted>
+[2022.05.24-14.17.11:819] [EOS SDK] LogEOSAnalytics: Record Event: Overlay.ClientApi.EjectInstance <Redacted>
+[2022.05.24-14.17.11:862] [EOS SDK] LogEOSAnalytics: Record Event: UsageMetric <Redacted>
+[2022.05.24-14.17.11:862] [EOS SDK] LogEOSAnalytics: Record Event: UsageMetric <Redacted>
+[2022.05.24-14.17.11:863] [EOS SDK] LogEOSAnalytics: Record Event: UsageMetric <Redacted>
+[2022.05.24-14.17.12:523] [EOS SDK] Shutdown Complete
