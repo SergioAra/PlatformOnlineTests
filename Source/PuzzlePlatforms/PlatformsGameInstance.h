@@ -62,11 +62,13 @@ public:
 
 protected:
 
+	void CreateSession();
+
 	void OnCreateSessionComplete(FName SessionName, bool bSuccess);
 
-	void OnDestroySessionComplete(FName SessionName, bool bSuccess);
+	void DestroySession();
 
-	void CreateSession();
+	void OnDestroySessionComplete(FName SessionName, bool bSuccess);
 
 	void OnFindSessionsComplete(bool bSuccess);
 

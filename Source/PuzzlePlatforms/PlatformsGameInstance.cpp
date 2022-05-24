@@ -12,6 +12,7 @@
 #include "UI/MainMenu.h"
 
 const static FName SERVER_NAME_SETTINGS_KEY = TEXT("ServerName");
+const static bool USING_LAN = false;
 
 UPlatformsGameInstance::UPlatformsGameInstance(const FObjectInitializer& ObjectInitializer)
 {
@@ -55,7 +56,7 @@ void UPlatformsGameInstance::Host(FString InServerName)
 
 	if (SessionInterface->GetNamedSession(NAME_GameSession))
 	{
-		SessionInterface->DestroySession(NAME_GameSession);
+		DestroySession();
 	}
 	else
 	{
@@ -80,8 +81,23 @@ void UPlatformsGameInstance::OnCreateSessionComplete(FName SessionName, bool bSu
 	ServerTravelTo(TEXT("Lobby?listen"));
 }
 
+void UPlatformsGameInstance::DestroySession()
+{
+	if (!bIsLoggedIn)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Not logged in, cannot destroy session"))
+		return;
+	}
+
+	if (SessionInterface.IsValid())
+	{
+		SessionInterface->DestroySession(NAME_GameSession);
+	}
+}
+
 void UPlatformsGameInstance::OnDestroySessionComplete(FName SessionName, bool bSuccess)
 {
+	UE_LOG(LogTemp, Warning, TEXT("Session destroyed"))
 	if (bSuccess)
 	{
 		CreateSession();
@@ -99,14 +115,14 @@ void UPlatformsGameInstance::CreateSession()
 	if (SessionInterface.IsValid())
 	{
 		FOnlineSessionSettings SessionSettings;
-		SessionSettings.bIsLANMatch = false;
+		SessionSettings.bIsLANMatch = USING_LAN;
 		SessionSettings.bIsDedicated = false;
 		SessionSettings.NumPublicConnections = 5;
 		SessionSettings.bShouldAdvertise = true;
 		SessionSettings.bAllowJoinInProgress = true;
 		SessionSettings.bAllowJoinViaPresence = true;
 		SessionSettings.bUsesPresence = true;
-		//SessionSettings.bUseLobbiesIfAvailable = true;
+		SessionSettings.bUseLobbiesIfAvailable = true;
 		SessionSettings.Set(SERVER_NAME_SETTINGS_KEY, ServerName, EOnlineDataAdvertisementType::ViaOnlineServiceAndPing);
 		SessionSettings.Set(SEARCH_KEYWORDS, FString("Lobby"), EOnlineDataAdvertisementType::ViaOnlineService);
 		SessionInterface->CreateSession(0, NAME_GameSession, SessionSettings);
@@ -223,10 +239,10 @@ void UPlatformsGameInstance::RefreshServerList()
 	if (SessionSearch.IsValid())
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Searching for sessions"))
-		//SessionSearch->bIsLanQuery = true;
+		SessionSearch->bIsLanQuery = USING_LAN;
 		SessionSearch->MaxSearchResults = 100;
-		SessionSearch->QuerySettings.Set(SEARCH_PRESENCE, true, EOnlineComparisonOp::Equals);
-		SessionSearch->QuerySettings.Set(SEARCH_EMPTY_SERVERS_ONLY, false, EOnlineComparisonOp::Equals);
+		//SessionSearch->QuerySettings.Set(SEARCH_PRESENCE, true, EOnlineComparisonOp::Equals);
+		//SessionSearch->QuerySettings.Set(SEARCH_EMPTY_SERVERS_ONLY, false, EOnlineComparisonOp::Equals);
 	
 		SessionInterface->FindSessions(0, SessionSearch.ToSharedRef());
 	}
@@ -317,7 +333,7 @@ void UPlatformsGameInstance::Login()
 		if (OnlineIdentity.IsValid())
 		{
 			FOnlineAccountCredentials Credentials;				//dev											//accountportal
-			Credentials.Id = FString("127.0.0.1:8081");		//for dev use IP and port
+			Credentials.Id = FString("127.0.0.1:8081");			//for dev use IP and port
 			Credentials.Token = FString("EOSTestCredential");	//token for dev is credential name
 			Credentials.Type = FString("developer");			//developer for dev								// accountportal only uses web for login
 			OnlineIdentity->OnLoginCompleteDelegates->AddUObject(this, &UPlatformsGameInstance::OnLoginComplete);
