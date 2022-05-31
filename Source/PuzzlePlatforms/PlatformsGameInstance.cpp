@@ -12,7 +12,7 @@
 #include "UI/MainMenu.h"
 
 const static FName SERVER_NAME_SETTINGS_KEY = TEXT("ServerName");
-const static bool USING_LAN = true;
+const static bool USING_LAN = false;
 
 UPlatformsGameInstance::UPlatformsGameInstance(const FObjectInitializer& ObjectInitializer)
 {
@@ -336,13 +336,18 @@ void UPlatformsGameInstance::Login()
 	{
 		IOnlineIdentityPtr OnlineIdentity = SubSystem->GetIdentityInterface();
 		if (OnlineIdentity.IsValid())
-		{
+		{	/*
 			FOnlineAccountCredentials Credentials;				//dev											//accountportal
 			Credentials.Id = FString("127.0.0.1:8081");			//for dev use IP and port
 			Credentials.Token = FString("EOSTestCredential");	//token for dev is credential name
 			Credentials.Type = FString("developer");			//developer for dev								// accountportal only uses web for login
 			OnlineIdentity->OnLoginCompleteDelegates->AddUObject(this, &UPlatformsGameInstance::OnLoginComplete);
 			OnlineIdentity->Login(0, Credentials);
+			*/
+
+			//Using command line args
+			OnlineIdentity->OnLoginCompleteDelegates->AddUObject(this, &UPlatformsGameInstance::OnLoginComplete);
+			OnlineIdentity->AutoLogin(0);
 		}
 	}
 }

@@ -1,0 +1,2 @@
+start "" "C:\Program Files\Epic Games\UE_5.0\Engine\Binaries\Win64\UnrealEditor.exe" "D:\Personal\My Projects\PuzzlePlatforms\PlatformOnlineTests\PuzzlePlatforms.uproject" -game -log -AUTH_TYPE="Developer" -AUTH_LOGIN="localhost:8081" -AUTH_PASSWORD="EOSTestCredential1"
+start "" "C:\Program Files\Epic Games\UE_5.0\Engine\Binaries\Win64\UnrealEditor.exe" "D:\Personal\My Projects\PuzzlePlatforms\PlatformOnlineTests\PuzzlePlatforms.uproject" -game -log -AUTH_TYPE="Developer" -AUTH_LOGIN="localhost:8081" -AUTH_PASSWORD="EOSTestCredential2"
